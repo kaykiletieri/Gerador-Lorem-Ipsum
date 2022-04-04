@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --corprin: #0E0600;
+    ;
+}
+
+@font-face {
+    font-family: OptimusPrincepsSemiBold;
+    src: url(./fonts/OptimusPrincepsSemiBold.ttf) format('truetype');
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    background: rgb(255,246,234);
+    background: radial-gradient(circle, rgba(255,246,234,1) 75%, rgba(212,191,163,1) 100%);
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#titulo {
+    font-family: 'OptimusPrincepsSemiBold', Arial, Helvetica;
+    font-size: 40pt;
+    color: var(--corprin);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+.container--config-lorem-form--config--range {
+    -webkit-appearance: none;
+    width: 200px;
+    border-radius: 15px;
+    height: 15px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.container--config-lorem-form--config--range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: var(--corprin);
+    cursor: pointer;
+}
+  
+.container--config-lorem-form--config--range::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--corprin);
+    cursor: pointer;
+}
+
+.container--config-lorem-form--config--button {
+    font-family: 'OptimusPrincepsSemiBold', Arial, Helvetica;
+    color: var(--corprin);
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid var(--corprin);
+    
+}
+
+.container--config-lorem-form--config--button:hover {
+    background-color: #b4b4b4;
+}
+
+.container--lorem-text {
+    padding: 50px;
+}
+
+.container--lorem-text {
+    width: 80vw;
+  
+    margin-top: 1rem;
+  
+    font-size: 1.4rem;
+    
+    margin: 1rem auto;
+  
+    overflow-y: auto;
+  }
+  
+  .container--lorem-text--result {
+    line-height: 150%;
+  }
+  
+  .container--lorem-text--result + .container--lorem-text--result {
+    margin-top: 8px;
+  }
