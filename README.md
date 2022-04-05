@@ -1,2 +1,2 @@
-#  Lorem Ipsum generator
-  Lorem Ipsum generator with JavaScript
+#  Gerador Lorem Ipsum
+
